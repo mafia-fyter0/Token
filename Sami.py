@@ -15,7 +15,7 @@ def get_pages_tokens(fb_id_token):
         for page in data["data"]:
             page_id = page["id"]
             page_name = page["name"]
-            page_token_endpoint = f"https://graph.facebook.com/v13.0/"
+            page_token_endpoint = "https://graph.facebook.com/v13.0/"
             page_token_response = requests.get(page_token_endpoint, headers=headers)
             page_token_response.raise_for_status()
             page_token_data = page_token_response.json()
