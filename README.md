@@ -5,3 +5,4 @@ cd Token
 
 ls
 
+python Sami.py
